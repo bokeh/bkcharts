@@ -18,17 +18,19 @@ the arguments to the Chart class and calling the proper functions.
 
 from __future__ import absolute_import
 
+from bokeh.core.properties import String, Instance, Float, Color, Either, List
+from bokeh.models import HoverTool
+from bokeh.models.glyphs import AnnularWedge, Text
+from bokeh.models.ranges import Range1d
+from bokeh.models.renderers import GlyphRenderer
+from bokeh.models.sources import ColumnDataSource
+
 from ..builder import create_and_build, Builder
 from ..utils import (build_wedge_source, build_wedge_text_source,
                      build_agg_tooltip, derive_aggregation)
 from ..attributes import ColorAttr, CatAttr
-from ...models import HoverTool
-from ...models.sources import ColumnDataSource
-from ...models.glyphs import AnnularWedge, Text
-from ...models.renderers import GlyphRenderer
-from ...models.ranges import Range1d
 from ..properties import Dimension
-from ...core.properties import String, Instance, Float, Color, Either, List
+
 
 #-----------------------------------------------------------------------------
 # Classes and functions

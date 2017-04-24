@@ -17,6 +17,9 @@ the arguments to the Chart class and calling the proper functions.
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import, print_function, division
 
+from bokeh.core.properties import Float, String
+from bokeh.palettes import Blues6
+
 from ..builder import XYBuilder, create_and_build
 from ..stats import Bins
 from ..properties import Dimension
@@ -24,9 +27,6 @@ from ..operations import Aggregate
 from ..attributes import ColorAttr
 from ..glyphs import BinGlyph
 from ..utils import build_agg_tooltip
-from ...core.properties import Float, String
-
-from bokeh.palettes import Blues6
 
 #-----------------------------------------------------------------------------
 # Classes and functions

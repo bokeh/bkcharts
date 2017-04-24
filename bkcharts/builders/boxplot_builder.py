@@ -19,9 +19,10 @@ It also add a new chained stacked method.
 
 from __future__ import absolute_import
 
+from bokeh.core.properties import Bool, String
+from bokeh.models import Range1d
+
 from ..builder import create_and_build
-from ...models import Range1d
-from ...core.properties import Bool, String
 from .bar_builder import BarBuilder
 from ..glyphs import BoxGlyph
 from ..utils import title_from_columns

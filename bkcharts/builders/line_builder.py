@@ -17,14 +17,15 @@ passing the arguments to the Chart class and calling the proper functions.
 # -----------------------------------------------------------------------------
 from __future__ import absolute_import
 
+from bokeh.core.properties import Bool, String, List
+from bokeh.models.sources import ColumnDataSource
+
 from six import iteritems
 from itertools import chain
 from ..builder import XYBuilder, create_and_build
 from ..glyphs import LineGlyph, PointGlyph
 from ..attributes import DashAttr, ColorAttr, MarkerAttr
 from ..data_source import NumericalColumnsAssigner
-from ...models.sources import ColumnDataSource
-from ...core.properties import Bool, String, List
 from ..operations import Stack, Dodge
 from ..utils import add_tooltips_columns
 

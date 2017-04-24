@@ -20,8 +20,8 @@ the arguments to the Chart class and calling the proper functions.
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from ...models import Range1d
-from ...core.properties import Bool, Int, Either, Float, List
+from bokeh.core.properties import Bool, Int, Either, Float, List
+from bokeh.models import Range1d
 
 from ..builder import create_and_build
 from .bar_builder import BarBuilder

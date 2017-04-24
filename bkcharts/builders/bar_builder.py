@@ -18,16 +18,17 @@ It also add a new chained stacked method.
 # -----------------------------------------------------------------------------
 from __future__ import absolute_import, print_function, division
 
+from bokeh.core.enums import Aggregation
+from bokeh.core.properties import Float, Enum, Bool, Override
+from bokeh.models import FactorRange, Range1d
+from bokeh.models.sources import ColumnDataSource
+
 from ..builder import Builder, create_and_build
-from ...models import FactorRange, Range1d
 from ..glyphs import BarGlyph
-from ...core.properties import Float, Enum, Bool, Override
 from ..properties import Dimension
 from ..attributes import ColorAttr, CatAttr
 from ..operations import Stack, Dodge
-from ...core.enums import Aggregation
 from ..stats import stats
-from ...models.sources import ColumnDataSource
 from ..utils import help
 
 

@@ -18,14 +18,16 @@ functions.
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
+from bokeh.core.properties import Float, Int, List, string_types, String, Color, Bool
+from bokeh.models.axes import CategoricalAxis
+from bokeh.models.sources import ColumnDataSource
+from bokeh.models.ranges import FactorRange, DataRange1d
+
 from bokeh.charts.builder import create_and_build
 from bokeh.charts.glyphs import HorizonGlyph
 from .line_builder import LineBuilder
-from ...core.properties import Float, Int, List, string_types, String, Color, Bool
 from ..attributes import ColorAttr, IdAttr
-from ...models.sources import ColumnDataSource
-from ...models.axes import CategoricalAxis
-from ...models.ranges import FactorRange, DataRange1d
+
 
 #-----------------------------------------------------------------------------
 # Classes and functions

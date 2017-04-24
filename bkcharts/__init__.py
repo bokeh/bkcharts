@@ -1,13 +1,8 @@
 from __future__ import absolute_import
 
-from ..util.dependencies import import_required
-import_required(
-    'pandas',
-    'The bokeh.charts interface requires Pandas (http://pandas.pydata.org) to be installed.'
-)
 
 # defaults and constants
-from ..plotting.helpers import DEFAULT_PALETTE; DEFAULT_PALETTE
+from bokeh.plotting.helpers import DEFAULT_PALETTE; DEFAULT_PALETTE
 
 # main components
 from .chart import Chart, defaults
@@ -33,8 +28,8 @@ from .builders.donut_builder import Donut
 from .builders.chord_builder import Chord
 
 # easy access to required bokeh components
-from ..models import ColumnDataSource; ColumnDataSource
-from ..io import curdoc, output_file, output_notebook, reset_output, save, show, gridplot
+from bokeh.models import ColumnDataSource; ColumnDataSource
+from bokeh.io import curdoc, output_file, output_notebook, reset_output, save, show, gridplot
 
 # Silence pyflakes
 (curdoc, output_file, output_notebook, reset_output, save, show, gridplot)
