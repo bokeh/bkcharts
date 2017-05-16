@@ -18,10 +18,10 @@ functions.
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builder import create_and_build, XYBuilder
-from bokeh.charts.glyphs import PointGlyph
-from bokeh.charts.attributes import MarkerAttr, ColorAttr
-from bokeh.charts.utils import add_tooltips_columns
+from bkcharts.builder import create_and_build, XYBuilder
+from bkcharts.glyphs import PointGlyph
+from bkcharts.attributes import MarkerAttr, ColorAttr
+from bkcharts.utils import add_tooltips_columns
 
 
 #-----------------------------------------------------------------------------
@@ -30,7 +30,7 @@ from bokeh.charts.utils import add_tooltips_columns
 
 
 def Scatter(data=None, x=None, y=None, **kws):
-    """ Create a scatter chart using :class:`ScatterBuilder <bokeh.charts.builders.scatter_builder.ScatterBuilder>`
+    """ Create a scatter chart using :class:`ScatterBuilder <bkcharts.builders.scatter_builder.ScatterBuilder>`
     to render the geometry from values.
 
     Args:
@@ -50,7 +50,7 @@ def Scatter(data=None, x=None, y=None, **kws):
         :source-position: above
 
         from bokeh.sampledata.autompg import autompg as df
-        from bokeh.charts import Scatter, output_file, show
+        from bkcharts import Scatter, output_file, show
 
         scatter = Scatter(df, x='mpg', y='hp', color='cyl', marker='origin',
                           title="Auto MPG", xlabel="Miles Per Gallon",

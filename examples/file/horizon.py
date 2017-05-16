@@ -1,6 +1,6 @@
 import pandas as pd
 
-from bokeh.charts import Horizon, output_file, show
+from bkcharts import Horizon, output_file, show
 
 # read in some stock data from the Yahoo Finance API
 AAPL = pd.read_csv(

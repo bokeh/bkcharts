@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
-from bokeh.charts.models import CompositeGlyph
-from bokeh.charts.glyphs import (AreaGlyph, LineGlyph, PointGlyph, StepGlyph, BoxGlyph, BarGlyph)
-from bokeh.charts.operations import stack
-from bokeh.charts.stats import stats
+from bkcharts.models import CompositeGlyph
+from bkcharts.glyphs import (AreaGlyph, LineGlyph, PointGlyph, StepGlyph, BoxGlyph, BarGlyph)
+from bkcharts.operations import stack
+from bkcharts.stats import stats
 
 from bokeh.models import ColumnDataSource
 

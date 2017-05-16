@@ -1,4 +1,4 @@
-from bokeh.charts import BoxPlot, output_file, show
+from bkcharts import BoxPlot, output_file, show
 from bokeh.sampledata.autompg import autompg as df
 
 # origin = the source of the data that makes up the autompg dataset

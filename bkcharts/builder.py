@@ -69,24 +69,24 @@ class Builder(HasProps):
 
     Required:
 
-    * :meth:`~bokeh.charts.builder.Builder.yield_renderers`: yields the glyphs to be
+    * :meth:`~bkcharts.builder.Builder.yield_renderers`: yields the glyphs to be
       rendered into the plot. Here you should call the
-      :meth:`~bokeh.charts.builder.Builder.add_glyph` method so that the builder can
+      :meth:`~bkcharts.builder.Builder.add_glyph` method so that the builder can
       setup the legend for you.
-    * :meth:`~bokeh.charts.builder.Builder.set_ranges`: setup the ranges for the
+    * :meth:`~bkcharts.builder.Builder.set_ranges`: setup the ranges for the
       glyphs. This is called after glyph creation, so you are able to inspect the
       comp_glyphs for their minimum and maximum values. See the
-      :meth:`~bokeh.charts.builder.Builder.create` method for more information on
+      :meth:`~bkcharts.builder.Builder.create` method for more information on
       when this is called and how the builder provides the ranges to the containing
       :class:`Chart` using the :meth:`Chart.add_ranges` method.
 
     Optional:
 
-    * :meth:`~bokeh.charts.builder.Builder.setup`: provides an area
+    * :meth:`~bkcharts.builder.Builder.setup`: provides an area
       where subclasses of builder can introspect properties, setup attributes, or change
       property values. This is called before
-      :meth:`~bokeh.charts.builder.Builder.process_data`.
-    * :meth:`~bokeh.charts.builder.Builder.process_data`: provides an area
+      :meth:`~bkcharts.builder.Builder.process_data`.
+    * :meth:`~bkcharts.builder.Builder.process_data`: provides an area
       where subclasses of builder can manipulate the source data before renderers are
       created.
 
@@ -116,7 +116,7 @@ class Builder(HasProps):
     coordinates would be dimensions = ['x', 'y']. You should
     then instantiate the x and y dimensions as attributes of the
     subclass of builder using the :class:`Dimension
-    <bokeh.charts.properties.Dimension>` class. One for x, as x
+    <bkcharts.properties.Dimension>` class. One for x, as x
     = Dimension(...), and one as y = Dimension(...).
     """
     dimensions = None # None because it MUST be overridden
@@ -126,7 +126,7 @@ class Builder(HasProps):
     glyphs. This specifies what are the valid configurations for
     the chart, with the option of specifying the type of the
     columns. The
-    :class:`~bokeh.charts.data_source.ChartDataSource` will
+    :class:`~bkcharts.data_source.ChartDataSource` will
     inspect this property of your subclass of Builder and use
     this to fill in any required dimensions if no keyword
     arguments are used.
@@ -137,14 +137,14 @@ class Builder(HasProps):
     attributes = Dict(String, Instance(AttrSpec), help="""
         The attribute specs used to group data. This is a mapping between the role of
         the attribute spec (e.g. 'color') and the
-        :class:`~bokeh.charts.attributes.AttrSpec` class (e.g.,
-        :class:`~bokeh.charts.attributes.ColorAttr`). The Builder will use this
+        :class:`~bkcharts.attributes.AttrSpec` class (e.g.,
+        :class:`~bkcharts.attributes.ColorAttr`). The Builder will use this
         attributes property during runtime, which will consist of any attribute specs
         that are passed into the chart creation function (e.g.,
-        :class:`~bokeh.charts.Bar`), ones that are created for the user from simple
+        :class:`~bkcharts.Bar`), ones that are created for the user from simple
         input types (e.g. `Bar(..., color='red')` or `Bar(..., color=<column_name>)`),
         or lastly, the attribute spec found in the default_attributes configured for
-        the subclass of :class:`~bokeh.charts.builder.Builder`.
+        the subclass of :class:`~bkcharts.builder.Builder`.
         """)
 
     """
@@ -204,7 +204,7 @@ class Builder(HasProps):
         """)
 
     legend_sort_direction = Enum(SortDirection, help="""
-    Sort direction to apply to :attr:`~bokeh.charts.builder.Builder.sort_legend`.
+    Sort direction to apply to :attr:`~bkcharts.builder.Builder.sort_legend`.
     Valid values are: `ascending` or `descending`.
     """)
 

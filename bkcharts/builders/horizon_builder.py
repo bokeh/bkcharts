@@ -23,8 +23,8 @@ from bokeh.models.axes import CategoricalAxis
 from bokeh.models.sources import ColumnDataSource
 from bokeh.models.ranges import FactorRange, DataRange1d
 
-from bokeh.charts.builder import create_and_build
-from bokeh.charts.glyphs import HorizonGlyph
+from bkcharts.builder import create_and_build
+from bkcharts.glyphs import HorizonGlyph
 from .line_builder import LineBuilder
 from ..attributes import ColorAttr, IdAttr
 
@@ -36,7 +36,7 @@ from ..attributes import ColorAttr, IdAttr
 
 def Horizon(data=None, x=None, y=None, series=None, **kws):
     """ Create a horizon chart using :class:`HorizonBuilder
-    <bokeh.charts.builders.scatter_builder.HorizonBuilder>`
+    <bkcharts.builders.scatter_builder.HorizonBuilder>`
     to render the geometry from values.
 
     Args:
@@ -56,7 +56,7 @@ def Horizon(data=None, x=None, y=None, series=None, **kws):
         :source-position: above
 
         import pandas as pd
-        from bokeh.charts import Horizon, output_file, show
+        from bkcharts import Horizon, output_file, show
 
         # read in some stock data from the Yahoo Finance API
         AAPL = pd.read_csv(

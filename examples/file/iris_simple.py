@@ -1,4 +1,4 @@
-from bokeh.charts import Scatter, output_file, show
+from bkcharts import Scatter, output_file, show
 from bokeh.sampledata.iris import flowers as data
 
 scatter = Scatter(data, x='petal_length', y='petal_width',

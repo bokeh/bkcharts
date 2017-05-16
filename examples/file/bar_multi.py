@@ -1,4 +1,4 @@
-from bokeh.charts import Bar, output_file, show, defaults
+from bkcharts import Bar, output_file, show, defaults
 from bokeh.layouts import gridplot
 from bokeh.sampledata.autompg import autompg as df
 

@@ -7,8 +7,8 @@ of categorical variable. Here, length and width are derived from the
 petal and sepal measurements.
 """
 
-from bokeh.charts import Scatter, output_file, show
-from bokeh.charts.operations import blend
+from bkcharts import Scatter, output_file, show
+from bkcharts.operations import blend
 from bokeh.sampledata.iris import flowers as data
 
 scatter = Scatter(data,

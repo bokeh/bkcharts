@@ -1,8 +1,8 @@
 import pandas as pd
 
-from bokeh.charts import Scatter, output_file, defaults, show
-from bokeh.charts.operations import blend
-from bokeh.charts.utils import df_from_json
+from bkcharts import Scatter, output_file, defaults, show
+from bkcharts.operations import blend
+from bkcharts.utils import df_from_json
 from bokeh.layouts import gridplot
 from bokeh.sampledata.autompg import autompg as df
 from bokeh.sampledata.iris import flowers

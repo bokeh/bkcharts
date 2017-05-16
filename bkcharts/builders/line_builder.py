@@ -36,7 +36,7 @@ from ..utils import add_tooltips_columns
 
 
 def Line(data=None, x=None, y=None, **kws):
-    """ Create a line chart using :class:`LineBuilder <bokeh.charts.builders.line_builder.LineBuilder>` to
+    """ Create a line chart using :class:`LineBuilder <bkcharts.builders.line_builder.LineBuilder>` to
     render the glyphs.
 
     The line chart is typically is used with column oriented data, where each column
@@ -74,7 +74,7 @@ def Line(data=None, x=None, y=None, **kws):
         :source-position: above
 
         import numpy as np
-        from bokeh.charts import Line, output_file, show
+        from bkcharts import Line, output_file, show
 
         # (dict, OrderedDict, lists, arrays and DataFrames are valid inputs)
         xyvalues = np.array([[2, 3, 7, 5, 26], [12, 33, 47, 15, 126], [22, 43, 10, 25, 26]])

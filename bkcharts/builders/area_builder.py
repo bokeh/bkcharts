@@ -18,8 +18,8 @@ functions.
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builder import create_and_build
-from bokeh.charts.glyphs import AreaGlyph
+from bkcharts.builder import create_and_build
+from bkcharts.glyphs import AreaGlyph
 from .line_builder import LineBuilder
 
 #-----------------------------------------------------------------------------
@@ -29,7 +29,7 @@ from .line_builder import LineBuilder
 
 def Area(data=None, x=None, y=None, **kws):
     """ Create an area chart using :class:`AreaBuilder
-    <bokeh.charts.builders.area_builder.AreaBuilder>` to render the
+    <bkcharts.builders.area_builder.AreaBuilder>` to render the
     geometry from values.
 
     Args:
@@ -48,7 +48,7 @@ def Area(data=None, x=None, y=None, **kws):
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import Area, show, output_file
+        from bkcharts import Area, show, output_file
 
         # create some example data
         data = dict(

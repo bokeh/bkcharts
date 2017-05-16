@@ -1,4 +1,4 @@
-from bokeh.charts import Area, show, output_file, defaults
+from bkcharts import Area, show, output_file, defaults
 from bokeh.layouts import row
 
 defaults.width = 400

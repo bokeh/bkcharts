@@ -440,7 +440,7 @@ class ChartDataSource(object):
 
                 This example is fairly low level and is not something the typical
                 user should worry about. The interface for data transformations from
-                the user perspective are the :ref:`bokeh_charts_functions`.
+                the user perspective are the :ref:`bkcharts_functions`.
 
             >>> data = {'a': [1, 2, 3, 4],
             ...         'b': [2, 3, 4, 5],

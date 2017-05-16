@@ -1,5 +1,5 @@
 import pandas as pd
-from bokeh.charts import output_file, Chord
+from bkcharts import output_file, Chord
 from bokeh.io import show
 from bokeh.sampledata.les_mis import data
 

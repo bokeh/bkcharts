@@ -14,10 +14,10 @@
 #-----------------------------------------------------------------------------
 
 from __future__ import absolute_import
-from bokeh.charts.utils import (build_wedge_source, build_wedge_text_source,
+from bkcharts.utils import (build_wedge_source, build_wedge_text_source,
                                 label_from_index_dict, comp_glyphs_to_df)
 
-from bokeh.charts.glyphs import BarGlyph
+from bkcharts.glyphs import BarGlyph
 
 import pytest
 from bokeh.models.sources import ColumnDataSource

@@ -43,7 +43,7 @@ def Donut(data, label='index', values=None,  color=None, agg=None,
     """ Create a Donut chart containing one or more layers from table-like data.
 
     Create a donut chart using :class:`DonutBuilder
-    <bokeh.charts.builders.donut_builder.DonutBuilder>` to
+    <bkcharts.builders.donut_builder.DonutBuilder>` to
     render the glyphs from input data and specification. The primary
     use case for the donut chart is to show relative amount each category, within a
     categorical array or multiple categorical arrays, makes up of the whole for some
@@ -55,7 +55,7 @@ def Donut(data, label='index', values=None,  color=None, agg=None,
             creating separate boxes
         values (str, optional): the values to use for producing the boxplot using
             table-like input data
-        color (str or list(str) or bokeh.charts._attributes.ColorAttr, optional): the
+        color (str or list(str) or bkcharts._attributes.ColorAttr, optional): the
             categorical variable or color attribute specification to use for coloring
             the wedges
         agg (str, optional): how the values associated with a wedge should be
@@ -78,8 +78,8 @@ def Donut(data, label='index', values=None,  color=None, agg=None,
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import Donut, show, output_file
-        from bokeh.charts.utils import df_from_json
+        from bkcharts import Donut, show, output_file
+        from bkcharts.utils import df_from_json
         from bokeh.sampledata.olympics2014 import data
 
         import pandas as pd

@@ -38,7 +38,7 @@ def Histogram(data, values=None, label=None, color=None, agg="count",
     """ Create a histogram chart with one or more histograms.
 
     Create a histogram chart using :class:`HistogramBuilder
-    <bokeh.charts.builders.histogram_builder.HistogramBuilder>` to
+    <bkcharts.builders.histogram_builder.HistogramBuilder>` to
     render the glyphs from input data and specification. This primary
     use case for the histogram is to depict the distribution of a
     variable by binning and aggregating the values in each bin.
@@ -55,7 +55,7 @@ def Histogram(data, values=None, label=None, color=None, agg="count",
         table-like input data
       label (str or list(str), optional): the categorical variable to use for creating
         separate histograms
-      color (str or list(str) or `~bokeh.charts._attributes.ColorAttr`, optional): the
+      color (str or list(str) or `~bkcharts._attributes.ColorAttr`, optional): the
         categorical variable or color attribute specification to use for coloring the
         histogram, or explicit color as a string.
       agg (str, optional): how to aggregate the bins. Defaults to "count".
@@ -76,7 +76,7 @@ def Histogram(data, values=None, label=None, color=None, agg="count",
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import Histogram, output_file, show
+        from bkcharts import Histogram, output_file, show
         from bokeh.layouts import row
         from bokeh.sampledata.autompg import autompg as df
 
@@ -131,7 +131,7 @@ class HistogramBuilder(BarBuilder):
     at the bin, normalized such that the *integral* over the range is 1. If
     False, the result will contain the number of samples in each bin.
 
-    For more info check :class:`~bokeh.charts.glyphs.HistogramGlyph`
+    For more info check :class:`~bkcharts.glyphs.HistogramGlyph`
     documentation.
 
     (default: False)

@@ -21,7 +21,7 @@ import pytest
 
 import numpy as np
 
-from bokeh.charts import Chart, defaults
+from bkcharts import Chart, defaults
 from bokeh.models import (
     ColumnDataSource, Grid, GlyphRenderer, LinearAxis, Range1d, Ticker)
 from bokeh.models.ranges import FactorRange
@@ -175,7 +175,7 @@ def test_charts_theme_validation():
 
 
 def test_bar_chart_below_visibility():
-    from bokeh.charts import Bar
+    from bkcharts import Bar
 
     # Visible because we have multiple bars
     df = dict(types=['foo', 'bar'], counts=[3, 2])

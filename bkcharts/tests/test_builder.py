@@ -25,9 +25,9 @@ try:
 except ImportError as e:
     is_pandas = False
 
-from bokeh.charts.builder import Builder, XYBuilder
-from bokeh.charts.properties import Dimension
-from bokeh.charts.attributes import ColorAttr, DEFAULT_PALETTE
+from bkcharts.builder import Builder, XYBuilder
+from bkcharts.properties import Dimension
+from bkcharts.attributes import ColorAttr, DEFAULT_PALETTE
 from bokeh.models import Range1d, FactorRange
 
 #-----------------------------------------------------------------------------

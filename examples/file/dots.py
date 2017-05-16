@@ -1,4 +1,4 @@
-from bokeh.charts import Dot, show, output_file
+from bkcharts import Dot, show, output_file
 
 # best support is with data in a format that is table-like
 data = {

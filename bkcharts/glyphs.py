@@ -8,7 +8,7 @@ from collections import defaultdict
 import numpy as np
 import pandas as pd
 
-from bokeh.charts import DEFAULT_PALETTE
+from bkcharts import DEFAULT_PALETTE
 from bokeh.core.enums import DashPattern
 from bokeh.models.glyphs import Arc, Line, Patches, Rect, Segment
 from bokeh.models.renderers import GlyphRenderer
@@ -927,7 +927,7 @@ class HistogramGlyph(AggregateGlyph):
         at the bin, normalized such that the *integral* over the range is 1. If
         False, the result will contain the number of samples in each bin.
 
-        For more info check :class:`~bokeh.charts.stats.Histogram` documentation.
+        For more info check :class:`~bkcharts.stats.Histogram` documentation.
 
         (default: False)
     """)

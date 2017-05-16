@@ -1,6 +1,6 @@
 import numpy as np
 
-from bokeh.charts import Horizon, output_file, show
+from bkcharts import Horizon, output_file, show
 
 x = np.linspace(0, np.pi*4, 137)
 y = (2*np.random.normal(size=137) + x**2)

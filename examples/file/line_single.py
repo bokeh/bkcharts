@@ -1,4 +1,4 @@
-from bokeh.charts import Line, show, output_file
+from bkcharts import Line, show, output_file
 
 # build a dataset where multiple columns measure the same thing
 data = dict(python=[2, 3, 7, 5, 26, 221, 44, 233, 254, 265, 266, 267, 120, 111],

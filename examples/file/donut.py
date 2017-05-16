@@ -1,5 +1,5 @@
-from bokeh.charts import Donut, show, output_file
-from bokeh.charts.utils import df_from_json
+from bkcharts import Donut, show, output_file
+from bkcharts.utils import df_from_json
 from bokeh.sampledata.olympics2014 import data
 
 import pandas as pd

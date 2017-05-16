@@ -37,7 +37,7 @@ def HeatMap(data, x=None, y=None, values=None, stat='count', xgrid=False, ygrid=
             hover_tool=True, hover_text=None, **kw):
     """ Represent 3 dimensions in a HeatMap chart using x, y, and values.
 
-    Uses the :class:`~bokeh.charts.builders.heatmap_builder.HeatMapBuilder`
+    Uses the :class:`~bkcharts.builders.heatmap_builder.HeatMapBuilder`
     to render the geometry from values.
 
     A HeatMap is a 3 Dimensional chart that crosses two dimensions, then aggregates
@@ -64,14 +64,14 @@ def HeatMap(data, x=None, y=None, values=None, stat='count', xgrid=False, ygrid=
     :ref:`userguide_charts_defaults` are also accepted as keyword parameters.
 
     Returns:
-        a new :class:`Chart <bokeh.charts.Chart>`
+        a new :class:`Chart <bkcharts.Chart>`
 
     Examples:
 
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import HeatMap, output_file, show
+        from bkcharts import HeatMap, output_file, show
 
         # (dict, OrderedDict, lists, arrays and DataFrames are valid inputs)
         data = {'fruit': ['apples']*3 + ['bananas']*3 + ['pears']*3,

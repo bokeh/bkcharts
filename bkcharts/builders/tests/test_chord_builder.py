@@ -7,7 +7,7 @@
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builders.chord_builder import ChordBuilder
+from bkcharts.builders.chord_builder import ChordBuilder
 
 #-----------------------------------------------------------------------------
 # Classes and functions

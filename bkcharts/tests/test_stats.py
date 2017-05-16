@@ -1,6 +1,6 @@
 import pytest
 
-from bokeh.charts.stats import Bins, Histogram
+from bkcharts.stats import Bins, Histogram
 from bokeh.models import ColumnDataSource
 
 import pandas as pd

@@ -1,6 +1,6 @@
 import pandas as pd
 
-from bokeh.charts import Line, Scatter, show, output_file, defaults
+from bkcharts import Line, Scatter, show, output_file, defaults
 from bokeh.layouts import gridplot
 from bokeh.models import HoverTool
 from bokeh.sampledata.degrees import data

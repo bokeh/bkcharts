@@ -36,7 +36,7 @@ def Dot(data, label=None, values=None, color=None, stack=None, group=None,
         agg="sum", xscale="categorical", yscale="linear", xgrid=False,
         ygrid=True, continuous_range=None, **kw):
     """ Create a Dot chart using
-    :class:`DotBuilder <bokeh.charts.builders.dot_builder.DotBuilder>` to render the
+    :class:`DotBuilder <bkcharts.builders.dot_builder.DotBuilder>` to render the
     geometry from the inputs.
 
     Args:
@@ -46,7 +46,7 @@ def Dot(data, label=None, values=None, color=None, stack=None, group=None,
             (Defaults to None)
         values (str, optional): iterable 2d representing the data series
             values matrix.
-        color (str or list(str) or `~bokeh.charts._attributes.ColorAttr`): string color,
+        color (str or list(str) or `~bkcharts._attributes.ColorAttr`): string color,
             string column name, list of string columns or a custom `ColorAttr`,
             which replaces the default `ColorAttr` for the builder.
         stack (list(str) or str, optional): columns to use for stacking.
@@ -68,7 +68,7 @@ def Dot(data, label=None, values=None, color=None, stack=None, group=None,
         .. bokeh-plot::
             :source-position: above
 
-            from bokeh.charts import Dot, output_file, show
+            from bkcharts import Dot, output_file, show
             from bokeh.layouts import row
 
             # best support is with data in a format that is table-like

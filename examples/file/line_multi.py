@@ -1,7 +1,7 @@
 import pandas as pd
 
 from bokeh.layouts import gridplot
-from bokeh.charts import Line, show, output_file, defaults
+from bkcharts import Line, show, output_file, defaults
 
 defaults.plot_width = 450
 defaults.plot_height = 400

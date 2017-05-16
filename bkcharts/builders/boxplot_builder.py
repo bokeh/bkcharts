@@ -39,7 +39,7 @@ def BoxPlot(data, label=None, values=None, color=None, group=None,
     """Create a BoxPlot chart containing one or more boxes from table-like data.
 
     Create a boxplot chart using :class:`BoxPlotBuilder
-    <bokeh.charts.builders.boxplot_builder.BoxPlotBuilder>` to render the
+    <bkcharts.builders.boxplot_builder.BoxPlotBuilder>` to render the
     glyphs from input data and specification. This primary use case for the
     boxplot is to depict the distribution of a variable by providing summary
     statistics for it. This boxplot is particularly useful at comparing
@@ -56,13 +56,13 @@ def BoxPlot(data, label=None, values=None, color=None, group=None,
             table-like input data
         label (str or list(str), optional): the categorical variable to use for creating
             separate boxes
-        color (str or list(str) or bokeh.charts._attributes.ColorAttr, optional): the
+        color (str or list(str) or bkcharts._attributes.ColorAttr, optional): the
             categorical variable or color attribute specification to use for coloring the
             boxes.
-        whisker_color (str or list(str) or bokeh.charts._attributes.ColorAttr, optional): the
+        whisker_color (str or list(str) or bkcharts._attributes.ColorAttr, optional): the
             color of the "whiskers" that show the spread of values outside the .25 and .75
             quartiles.
-        marker (str or list(str) or bokeh.charts._attributes.MarkerAttr, optional): the
+        marker (str or list(str) or bkcharts._attributes.MarkerAttr, optional): the
             marker glyph to use for the outliers
         outliers (bool, optional): whether to show outliers. Defaults to True.
         **kw:
@@ -78,7 +78,7 @@ def BoxPlot(data, label=None, values=None, color=None, group=None,
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import BoxPlot, output_file, show
+        from bkcharts import BoxPlot, output_file, show
         from bokeh.layouts import row
         from bokeh.sampledata.autompg import autompg as df
 

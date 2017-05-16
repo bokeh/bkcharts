@@ -1,7 +1,7 @@
-from bokeh.charts import Bar, output_file, show
-from bokeh.charts.attributes import cat, color
-from bokeh.charts.operations import blend
-from bokeh.charts.utils import df_from_json
+from bkcharts import Bar, output_file, show
+from bkcharts.attributes import cat, color
+from bkcharts.operations import blend
+from bkcharts.utils import df_from_json
 from bokeh.sampledata.olympics2014 import data
 
 # utilize utility to make it easy to get json/dict data converted to a dataframe

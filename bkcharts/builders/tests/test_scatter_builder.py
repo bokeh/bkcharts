@@ -14,7 +14,7 @@
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builders.scatter_builder import ScatterBuilder
+from bkcharts.builders.scatter_builder import ScatterBuilder
 
 #-----------------------------------------------------------------------------
 # Classes and functions

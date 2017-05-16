@@ -4,7 +4,7 @@ postcards.
 Source: https://en.wikipedia.org/wiki/History_of_United_States_postage_rates
 """
 
-from bokeh.charts import Step, show, output_file
+from bkcharts import Step, show, output_file
 
 # build a dataset where multiple columns measure the same thing
 data = dict(stamp=[

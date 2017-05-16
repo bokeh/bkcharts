@@ -29,7 +29,7 @@ from ..glyphs import StepGlyph
 
 def Step(data=None, x=None, y=None, **kws):
     """ Create a step chart using :class:`StepBuilder
-    <bokeh.charts.builder.step_builder.StepBuilder>` to render the geometry
+    <bkcharts.builder.step_builder.StepBuilder>` to render the geometry
     from the inputs.
 
     .. note::
@@ -61,7 +61,7 @@ def Step(data=None, x=None, y=None, **kws):
     .. bokeh-plot::
         :source-position: above
 
-        from bokeh.charts import Step, show, output_file
+        from bkcharts import Step, show, output_file
 
         # build a dataset where multiple columns measure the same thing
         data = dict(

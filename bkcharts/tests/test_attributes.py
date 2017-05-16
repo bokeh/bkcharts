@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 import pytest
 
-from bokeh.charts.attributes import AttrSpec
+from bkcharts.attributes import AttrSpec
 
 
 PALETTE = ['red', 'blue', 'green', 'black', 'brown', 'yellow', 'purple']

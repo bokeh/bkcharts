@@ -1,4 +1,4 @@
-from bokeh.charts import Donut, show, output_file
+from bkcharts import Donut, show, output_file
 from bokeh.layouts import column
 from bokeh.sampledata.autompg import autompg
 

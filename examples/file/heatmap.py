@@ -1,6 +1,6 @@
 import pandas as pd
 
-from bokeh.charts import HeatMap, bins, output_file, show
+from bkcharts import HeatMap, bins, output_file, show
 from bokeh.layouts import column, gridplot
 from bokeh.palettes import RdYlGn6, RdYlGn9
 from bokeh.sampledata.autompg import autompg

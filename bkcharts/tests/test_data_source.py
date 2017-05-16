@@ -17,8 +17,8 @@ from __future__ import absolute_import
 
 import pytest
 
-from bokeh.charts.attributes import ColorAttr, DashAttr, MarkerAttr
-from bokeh.charts.data_source import ChartDataSource, NumericalColumnsAssigner
+from bkcharts.attributes import ColorAttr, DashAttr, MarkerAttr
+from bkcharts.data_source import ChartDataSource, NumericalColumnsAssigner
 
 #-----------------------------------------------------------------------------
 # Classes and functions

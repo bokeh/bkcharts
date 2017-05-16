@@ -1,6 +1,6 @@
 import pandas as pd
 
-from bokeh.charts import TimeSeries, show, output_file
+from bkcharts import TimeSeries, show, output_file
 from bokeh.layouts import column
 
 # read in some stock data from the Yahoo Finance API

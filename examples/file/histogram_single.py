@@ -1,4 +1,4 @@
-from bokeh.charts import Histogram, output_file, show
+from bkcharts import Histogram, output_file, show
 from bokeh.sampledata.autompg import autompg as df
 
 df.sort_values(by='cyl', inplace=True)

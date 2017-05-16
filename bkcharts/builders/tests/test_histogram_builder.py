@@ -14,7 +14,7 @@
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builders.histogram_builder import HistogramBuilder
+from bkcharts.builders.histogram_builder import HistogramBuilder
 
 #-----------------------------------------------------------------------------
 # Classes and functions

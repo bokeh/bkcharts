@@ -1,4 +1,4 @@
-from bokeh.charts import Histogram, defaults, show, output_file
+from bkcharts import Histogram, defaults, show, output_file
 from bokeh.layouts import gridplot
 from bokeh.sampledata.autompg import autompg as df
 

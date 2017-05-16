@@ -35,7 +35,7 @@ BUILDER_TYPES = {
 
 def TimeSeries(data=None, x=None, y=None, builder_type=LineBuilder, **kws):
     """ Create a timeseries chart using :class:`LineBuilder
-    <bokeh.charts.builder.line_builder.LineBuilder>` to produce the renderers from
+    <bkcharts.builder.line_builder.LineBuilder>` to produce the renderers from
     the inputs. The timeseries chart acts as a switchboard to produce charts
     for timeseries data with different glyph representations.
 
@@ -51,7 +51,7 @@ def TimeSeries(data=None, x=None, y=None, builder_type=LineBuilder, **kws):
     :ref:`userguide_charts_defaults` are also accepted as keyword parameters.
 
     Returns:
-        a new :class:`Chart <bokeh.charts.Chart>`
+        a new :class:`Chart <bkcharts.Chart>`
 
     Examples:
 
@@ -60,7 +60,7 @@ def TimeSeries(data=None, x=None, y=None, builder_type=LineBuilder, **kws):
 
         import pandas as pd
 
-        from bokeh.charts import TimeSeries, show, output_file
+        from bkcharts import TimeSeries, show, output_file
         from bokeh.layouts import column
 
         # read in some stock data from the Yahoo Finance API

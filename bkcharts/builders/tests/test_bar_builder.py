@@ -14,8 +14,8 @@
 #-----------------------------------------------------------------------------
 from __future__ import absolute_import
 
-from bokeh.charts.builders.bar_builder import BarBuilder
-from bokeh.charts.stats import CountDistinct
+from bkcharts.builders.bar_builder import BarBuilder
+from bkcharts.stats import CountDistinct
 
 import operator
 
