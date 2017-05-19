@@ -1,0 +1,11 @@
+global-exclude .git*
+include CHANGELOG
+include classifiers.txt
+include LICENSE.txt
+include MANIFEST.txt
+include setup.cfg
+include versioneer.py
+recursive-include examples *.py *.ipynb *.md
+recursive-include tests *.py *.ipynb *.md *.png
+prune examples/file/*.html
+prune examples/notebook/.ipynb_checkpoints
