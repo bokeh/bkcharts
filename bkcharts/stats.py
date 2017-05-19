@@ -15,6 +15,7 @@ from __future__ import absolute_import
 
 import numpy as np
 import pandas as pd
+from six import string_types
 
 from bokeh.models.sources import ColumnDataSource
 from bokeh.core.has_props import HasProps
@@ -50,7 +51,6 @@ class Stat(HasProps):
             if isinstance(source, pd.DataFrame):
                 source = ColumnDataSource(source)
             properties['source'] = source
-
         super(Stat, self).__init__(**properties)
         self._refresh()
 
@@ -170,8 +170,11 @@ class Bin(Stat):
     def __init__(self, bin_label, values=None, source=None, **properties):
         if isinstance(bin_label, tuple):
             bin_label = list(bin_label)
-        else:
+        elif isinstance(bin_label, string_types):
             bin_label = [bin_label]
+        else:
+            # This handles Pandas new Interval objects
+            bin_label = [str(bin_label)]
         properties['label'] = bin_label
 
         bounds = self.process_bounds(bin_label)

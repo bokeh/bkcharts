@@ -446,8 +446,10 @@ def cat_to_polar(df, cat_cols, agg_col=None, agg='mean', level_width=0.5):
         df.index = pd.MultiIndex.from_tuples(idx)
         df.index.names = cat_cols
 
+        # This is broken with newer versions of pandas, old version will
+        # have to live with a warning until someone can offer a real fix
         # sort the index to avoid performance warning (might alter chart)
-        df.sortlevel(inplace=True)
+        #df.sortlevel(inplace=True)
 
     inners, outers = calc_wedge_bounds(df['level'], level_width)
     df['inners'] = inners
