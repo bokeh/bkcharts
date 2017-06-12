@@ -19,6 +19,7 @@ from bokeh.core.properties import Auto, Either, Enum, String, value
 from bokeh.models import CategoricalAxis, DatetimeAxis, FactorRange, glyphs, Grid, HoverTool, Legend, LegendItem, LinearAxis, markers, Plot
 from bokeh.plotting import DEFAULT_TOOLS
 from bokeh.plotting.helpers import _process_tools_arg, _glyph_function, _process_active_tools
+from bokeh.models.scales import CategoricalScale
 from bokeh.util._plot_arg_helpers import _convert_responsive
 
 Scale = enumeration('linear', 'categorical', 'datetime')
@@ -211,6 +212,12 @@ class Chart(Plot):
 
         if len(self._tooltips) > 0:
             self.add_tools(HoverTool(tooltips=self._tooltips))
+
+        if isinstance(self.x_range, FactorRange):
+            self.x_scale = CategoricalScale()
+
+        if isinstance(self.y_range, FactorRange):
+            self.y_scale = CategoricalScale()
 
     def add_legend(self, chart_legends):
         """Add the legend to your plot, and the plot to a new Document.
