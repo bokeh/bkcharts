@@ -20,7 +20,7 @@ setup(
 
     # basic package metadata
     name='bkcharts',
-    version="0.1",
+    version="0.2",
     description='High level chart types built on top of Bokeh',
     license='New BSD',
     author='Continuum Analytics',
