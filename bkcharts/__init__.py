@@ -1,5 +1,7 @@
 from __future__ import absolute_import
 
+# expose internal packages
+from . import builders
 
 # defaults and constants
 from bokeh.plotting.helpers import DEFAULT_PALETTE; DEFAULT_PALETTE
